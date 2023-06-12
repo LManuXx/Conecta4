@@ -34,6 +34,7 @@ public class Board {
             this.setColor(row, col);
 
         }
+        displayBoard();
         checkWinner();
 
     }
@@ -105,7 +106,8 @@ public class Board {
         }
 
         // Vertical
-        if (checkLine(lastPosition[0], lastPosition[1], 1, 0, color)) {
+        if (checkLine(lastPosition[0], lastPosition[1], 1, 0, color) ||
+                checkLine(lastPosition[0], lastPosition[1], -01, 0, color)) {
             winner = true;
         }
 

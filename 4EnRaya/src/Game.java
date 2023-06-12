@@ -3,13 +3,11 @@ import java.util.Scanner;
 public class Game {
     public static void main(String[] args) throws Exception {
         Board board = new Board();
-        while (!board.isFinished()) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Ingresa un la columna: ");
-            int col = scanner.nextInt();
+        Player playerX = new Player(board);
+        Player playerY = new Player(board);
 
-            board.putToken(col);
-            board.displayBoard();
+        while (!board.isFinished()) {
+            playerX.putToken();
 
         }
 
