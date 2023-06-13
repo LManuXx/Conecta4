@@ -140,4 +140,8 @@ public class Board {
         return count >= 4;
     }
 
+    public int getColumn() {
+        return NUM_COLS;
+    }
+
 }
