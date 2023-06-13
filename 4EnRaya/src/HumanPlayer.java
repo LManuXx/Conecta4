@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Player {
+public class HumanPlayer implements PlayerInterface {
 
-    Board board;
+    private Board board;
 
-    public Player(Board board) {
+    public HumanPlayer(Board board) {
         this.board = board;
     }
 

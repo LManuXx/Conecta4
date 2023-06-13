@@ -7,8 +7,7 @@ public class Game {
         do {
 
             Board board = new Board();
-            Player playerX = new Player(board);
-            Player playerY = new Player(board);
+            HumanPlayer playerX = new HumanPlayer(board);
 
             while (!board.isFinished()) {
                 playerX.putToken();
