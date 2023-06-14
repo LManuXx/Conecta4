@@ -11,7 +11,12 @@ public class MachinePlayer implements PlayerInterface {
 
     @Override
     public void putToken() {
-        board.putToken(generateRandomNumber(board.getColumn()));
+        int col;
+        do {
+            col = generateRandomNumber(board.getColumn());
+        } while (board.isColumnFull(col));
+
+        board.putToken(col);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Presiona cualquier tecla para continuar...");
         scanner.nextLine();

@@ -17,7 +17,7 @@ public class HumanPlayer implements PlayerInterface {
             System.out.print("Ingresa un la columna: ");
             col = scanner.nextInt();
 
-        } while (col > 6 || col < 0);
+        } while ((col > 6 || col < 0) || board.isColumnFull(col));
 
         board.putToken(col);
 
