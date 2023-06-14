@@ -96,7 +96,7 @@ public class Board {
         return isFull() || winner;
     }
 
-    public void checkWinner() {
+    private void checkWinner() {
         Color color = colors[lastPosition[0]][lastPosition[1]];
 
         // Horizontal

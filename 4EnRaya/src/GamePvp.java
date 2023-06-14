@@ -25,7 +25,7 @@ public class GamePvp implements GameInterface {
 
     }
 
-    private boolean isResumed() {
+    static boolean isResumed() {
         boolean res;
         System.out.println("¿Quieres iniciar otra partida?");
 
