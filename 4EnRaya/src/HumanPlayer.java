@@ -10,9 +10,15 @@ public class HumanPlayer implements PlayerInterface {
 
     public void putToken() {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingresa un la columna: ");
-        int col = scanner.nextInt();
+        int col;
+
+        do {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Ingresa un la columna: ");
+            col = scanner.nextInt();
+
+        } while (col > 6 || col < 0);
+
         board.putToken(col);
 
     }
