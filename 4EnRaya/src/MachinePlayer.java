@@ -9,6 +9,7 @@ public class MachinePlayer implements PlayerInterface {
         this.board = board;
     }
 
+    @Override
     public void putToken() {
         board.putToken(generateRandomNumber(board.getColumn()));
         Scanner scanner = new Scanner(System.in);

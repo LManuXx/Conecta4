@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
-public class Game {
+public class GamePvp implements GameInterface {
 
+    public GamePvp() {
+
+    }
+
+    @Override
     public void startGame() {
 
         do {
@@ -31,7 +36,7 @@ public class Game {
     }
 
     public static void main(String[] args) throws Exception {
-        Game game = new Game();
+        GamePvp game = new GamePvp();
         game.startGame();
     }
 }
