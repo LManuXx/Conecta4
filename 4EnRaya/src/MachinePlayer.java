@@ -17,6 +17,7 @@ public class MachinePlayer implements PlayerInterface {
         } while (board.isColumnFull(col));
 
         board.putToken(col);
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("Presiona cualquier tecla para continuar...");
         scanner.nextLine();

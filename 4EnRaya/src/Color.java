@@ -3,11 +3,7 @@ public enum Color {
     O,
     NULL;
 
-    private boolean isFilled() {
-        return this == X || this == O;
-    }
-
-    private boolean isNull() {
+    public boolean isNull() {
         return this == NULL;
     }
 

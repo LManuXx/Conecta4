@@ -13,6 +13,7 @@ public class HumanPlayer implements PlayerInterface {
         int col;
 
         do {
+            @SuppressWarnings("resource")
             Scanner scanner = new Scanner(System.in);
             System.out.print("Ingresa un la columna: ");
             col = scanner.nextInt();

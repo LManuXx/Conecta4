@@ -26,9 +26,8 @@ public class GamePvp implements GameInterface {
     }
 
     static boolean isResumed() {
-        boolean res;
         System.out.println("¿Quieres iniciar otra partida?");
-
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         return input.equals("s");

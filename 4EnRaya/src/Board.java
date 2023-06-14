@@ -147,7 +147,7 @@ public class Board {
     public boolean isColumnFull(int column) {
         int i = 0;
         while (i < NUM_ROWS) {
-            if (colors[i][column] == Color.NULL) {
+            if (colors[i][column].isNull()) {
                 break;
             } else {
                 i++;
