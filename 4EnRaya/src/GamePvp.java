@@ -35,8 +35,4 @@ public class GamePvp implements GameInterface {
 
     }
 
-    public static void main(String[] args) throws Exception {
-        GamePvp game = new GamePvp();
-        game.startGame();
-    }
 }

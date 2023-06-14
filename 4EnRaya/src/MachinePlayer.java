@@ -19,7 +19,7 @@ public class MachinePlayer implements PlayerInterface {
 
     private int generateRandomNumber(int max) {
         Random random = new Random();
-        return random.nextInt(max + 1);
+        return random.nextInt(max);
 
     }
 

@@ -20,6 +20,8 @@ public class GameMvM implements GameInterface {
                     machinePlayer.putToken();
                 }
             }
+
+            System.out.println("Ha ganado el color: " + board.getWinnerColor().toString());
         } while (GamePvp.isResumed());
     }
 
